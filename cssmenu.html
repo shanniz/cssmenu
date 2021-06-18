@@ -10,19 +10,19 @@
 			li{
 				display:inline-block;
 				float:left;
-				margin-right:3px;
-				
+				margin-right:3px;				
 			}
 			
 			li a{
 				min-width:200px;
-				color:red;
+				color:green;
 				background: #2f3036;
 			}
 			
 			li:hover ul a:hover{
 				background: #19c589; 
 				color: #fff;
+				
 			}
 			
 			li:hover a{
@@ -37,6 +37,14 @@
 				display:block;
 			}
 			
+			@media screen and (max-width:760px){
+				ul li, li a
+				{
+					width:100%;
+				}
+				
+			}
+			
 		</style>
 		
 	</head>
@@ -46,7 +54,13 @@
 		<div id="div_header">
 			<ul>
 				<li> <a href="#"> Home </a> </li>
-				<li> <a href="#"> Services </a> </li>
+				<li> <a href="#"> Services </a> 
+					<ul class="hidden">
+						<li> <a href="#"> IT consultation </a> </li>
+						<li> <a href="#"> web development </a> </li>
+						<li> <a href="#"> mobile app development </a> </li>
+					</ul>
+				</li>
 				<li> <a href="#"> About Us </a> 
 					<ul class="hidden">
 						<li> <a href="#"> Who are we </a>  </li>
