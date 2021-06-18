@@ -1,0 +1,74 @@
+<html>
+	<head>
+	
+		<style> 
+			ul{
+				list-style-type:none;
+				position:absolute;
+			}
+			
+			li{
+				display:inline-block;
+				float:left;
+				margin-right:3px;
+				
+			}
+			
+			li a{
+				min-width:200px;
+				color:red;
+				background: #2f3036;
+			}
+			
+			li:hover ul a:hover{
+				background: #19c589; 
+				color: #fff;
+			}
+			
+			li:hover a{
+				background:cyan;
+			}
+			
+			li ul{
+				display:none;
+			}
+			
+			ul li a:hover + .hidden, .hidden:hover {
+				display:block;
+			}
+			
+		</style>
+		
+	</head>
+
+	<body>
+		
+		<div id="div_header">
+			<ul>
+				<li> <a href="#"> Home </a> </li>
+				<li> <a href="#"> Services </a> </li>
+				<li> <a href="#"> About Us </a> 
+					<ul class="hidden">
+						<li> <a href="#"> Who are we </a>  </li>
+						<li> <a href="#"> What we do </a>  </li>
+					</ul>
+				</li>
+				<li> <a href="#"> Contact Us </a> </li>
+			</ul>
+		</div>
+		
+		
+		
+
+	
+		
+		
+		
+		<div>
+			
+
+		</div>
+
+
+	</body>
+</html>
